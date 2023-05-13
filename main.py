@@ -1,8 +1,7 @@
 import os
 
-
-def sum_function(a: float, b: float) -> float:
-    pass
+def sum_function(a:float, b:float)->float:
+    return a + b 
 
 
 def subtract_function(a: float, b: float) -> float:
@@ -33,8 +32,8 @@ def main():
         if (selection == 1):
             a = input("First number:")
             b = input("Second number:")
-            print(sum_function(a, b))
-        elif (selection == 2):
+            print(sum_function(float(a),float(b)))
+        elif(selection==2):
             a = input("First number:")
             b = input("Second number:")
             print(subtract_function(a, b))
