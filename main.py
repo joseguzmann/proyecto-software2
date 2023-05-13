@@ -1,15 +1,20 @@
 import os
-def sum_function(a:float, b:float)->float:
-    pass 
 
-def subtract_function(a:float, b:float)->float:
-    pass 
 
-def multiply_function(a:float, b:float)->float:
-    pass 
+def sum_function(a: float, b: float) -> float:
+    pass
+
+
+def subtract_function(a: float, b: float) -> float:
+    pass
+
+
+def multiply_function(a: float, b: float) -> float:
+    return a*b
+
 
 def menu():
-    prompt =f"""
+    prompt = f"""
     Very simple calculator.
     1. Sum two numbers
     2. subtract two numbers
@@ -25,19 +30,19 @@ def main():
         selection = int(input())
         os.system('cls' if os.name == 'nt' else 'clear')
 
-        if(selection==1):
+        if (selection == 1):
             a = input("First number:")
             b = input("Second number:")
-            print(sum_function(a,b))
-        elif(selection==2):
+            print(sum_function(a, b))
+        elif (selection == 2):
             a = input("First number:")
             b = input("Second number:")
-            print(subtract_function(a,b))
-        elif(selection==4):
+            print(subtract_function(a, b))
+        elif (selection == 3):
             a = input("First number:")
             b = input("Second number:")
-            print(multiply_function(a,b))
+            print(multiply_function(float(a), float(b)))
 
-    
+
 if __name__ == "__main__":
     main()
